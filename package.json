@@ -1,0 +1,15 @@
+{
+  "name": "aetharfell",
+  "version": "1.0.0",
+  "description": "AETHARFELL - Telegram Mini App Game",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "admin"
+  ],
+  "scripts": {
+    "install-all": "npm install && npm install --workspace=backend && npm install --workspace=frontend && npm install --workspace=admin",
+    "dev": "npm run dev --workspace=backend & npm run dev --workspace=frontend & npm run dev --workspace=admin"
+  }
+}
